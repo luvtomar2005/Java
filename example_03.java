@@ -13,8 +13,9 @@ class Luv{
 public class example_03 {
     public static void main(String[] args) {
         Luv l1 = new Luv();
-
+        Luv l2 = new Luv();
         System.out.println("Hello world");
         System.out.println(l1.y); // Will print 0 because in java at garbage value we have zero
+        l2.fun2();
     }
 }
