@@ -1,35 +1,25 @@
 
-// Superclass (Parent Class)
-class Vehicle {
-    // Attributes of the parent
-    String brand = "Ford";
-    
-    // Method of the parent
-    public void honk() {
-        System.out.println("Beep, beep!");
+class Nokia1{
+    int x, y;
+    void f1(){
+        System.out.println("Parent's function1 is executed");
+    }
+
+    void f2(){
+        System.out.println("Parent's function2 is executed");
     }
 }
-
-// Subclass (Child Class) using the 'extends' keyword
-class Car extends Vehicle {
-    // Unique attribute for the child class
-    String modelName = "Mustang";
+class Nokia2 extends Nokia1{
+    int z;
+    void f3(){
+        System.out.println("Child function1 is executed");
+    }
 }
-
-
-
 public class program_13_inheritance {
     public static void main(String[] args) {
-        // Create an object of the Car class
-        Car myCar = new Car();
-
-        // 1. Accessing a method from the parent (Vehicle) class
-        myCar.honk(); 
-
-        // 2. Accessing attributes from both parent and child classes
-        System.out.println("Brand: " + myCar.brand);      // Inherited from Vehicle
-        System.out.println("Model: " + myCar.modelName);  // Unique to Car
+        Nokia2 n1 = new Nokia2();
+        n1.f3();
+        n1.f2();
+        n1.f1();
     }
 }
-
-
