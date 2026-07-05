@@ -1,0 +1,8 @@
+Benefits of encapsulatoin ? 
+It hides internal data using private fields.
+It provides controlled access through methods.
+It protects object integrity by validating input.
+It reduces coupling and improves maintainability.
+It allows internal implementation to change without affecting other classes.
+It is one of the core principles of Object-Oriented
+ Programming and is widely used in frameworks like Spring Boot.
