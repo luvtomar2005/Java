@@ -1,0 +1,85 @@
+Object-Oriented Programming (OOP) is a programming paradigm that models
+ real-world entities as software objects. Each object contains
+  both data (fields) and behavior (methods). 
+  OOP improves code organization, reusability, maintainability,
+   scalability, and modularity. In Java, OOP is 
+implemented using classes, which act as blueprints for creating objects.
+
+Java does not allow us to create objects from thin air.
+
+First, we create a Class.
+
+Then we create Objects from that class.
+
+A class is a blueprint or template used to create objects.
+It tells Java
+"Every object created from me will contain these variables and these methods."
+
+When Java creates actual memory 
+using the class blueprint, that memory is called an object.
+
+Inside a class, everything is called a class member.
+
+Fields store data methods define behviour
+
+Each object has its own copy.
+This is called an instance field.
+
+A package is simply a folder used to organize related classes.
+
+Encapsulation is the process of bundling data and methods 
+together inside a class while restricting direct access to the data.
+
+important -> A private variable cannot be accessed 
+directly from outside the class. However,
+ the class can expose public methods such as setters 
+ and getters. These methods belong to the same class,
+  so they are allowed to access private fields. 
+This provides controlled 
+access and allows validation before modifying the data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

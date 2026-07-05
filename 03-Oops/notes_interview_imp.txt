@@ -1,0 +1,26 @@
+What is the difference between an instance variable and a static variable?
+An instance variable belongs to an object, so every object gets its own separate copy. A static variable belongs to the class, so only one copy exists and it is shared by all objects of that class. Instance variables are created when an object is created, while static variables are initialized when the class is loaded by the JVM.
+
+Why is main() static?
+The main() method is static because the JVM needs to call it before creating any objects. Since static methods belong to the class rather than an object, the JVM can invoke main() directly using the class name without needing an instance.
+
+Can a static method access instance variables directly?
+
+No. A static method cannot directly access instance variables because instance variables belong to objects, and a static method may execute when no object exists.
+
+Can an instance method access static variables?
+
+Yes. An instance method can directly access static variables because static members belong to the class, and the class is already loaded before any object is created.
+
+Can a static method call another static method?
+Yes -> both belongs to the same class
+
+Can an instance method call a static method?
+Yes -> The class has already been loaded, so the static method is available.
+
+An instance method is a method that belongs to an object rather than the class. It is invoked using an object reference, has access to the object's instance variables through the implicit this reference, and can also access static members. Unlike a static method, an instance method cannot be called without creating an object.
+
+
+this is a reference variable in Java that refers to the current object. It is automatically available inside every instance method and constructor. It is commonly used to distinguish instance variables from local variables, call another constructor in the same class, pass the current object as an argument, and return the current object.
+
+An instance variable is declared inside a class but outside methods. It belongs to an object, gets default values from the JVM, and exists as long as the object exists. A local variable is declared inside a method, constructor, or block. It belongs to that method call, has no default value, and exists only while the method is executing.

@@ -1,0 +1,24 @@
+private provides the highest level of access restriction
+ for class members. It is commonly used to
+ hide implementation details and protect object state."
+
+ If no access modifier is specified, Java uses 
+ package-private 
+ access. 
+ The member is accessible only within the same package.
+
+protected is mainly useful when designing inheritance
+ relationships. It allows subclasses to access members 
+while still restricting access from unrelated classes."
+
+"public provides unrestricted access. 
+It should be used only for members that are
+ intended to be accessed by any class."
+
+
+An instance is an object created from a class. 
+A field is a variable declared inside a class that stores 
+the object's state. null is the default value of
+ reference-type fields,
+indicating that they currently do not refer to any object.
+
