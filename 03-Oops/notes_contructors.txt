@@ -1,0 +1,28 @@
+A constructor is a special member of a class that
+ is automatically executed when an object is created
+  using the new keyword.
+   Its primary purpose is to initialize the object's state. 
+   A constructor has the same name as the class,
+    has no return type, and can be overloaded to provide
+     multiple ways of creating objects.
+
+Java chooses the correct constructor based on the arguments.
+the above statement is for when there is constructor overloading
+means when multiple constructors exists
+
+
+Constructor chaining is one of the most important concept
+in case of constructor which helps in avoiding code duplication 
+
+
+When a class has multiple constructors 
+(e.g., a default constructor, a constructor with 2
+ parameters, and a constructor with 4 parameters), 
+ you could write the initialization logic 
+ (this.name = name;, etc.) inside every single one of them. 
+ That is code duplication.
+
+Constructor chaining allows you to link these constructors
+ together using the this() keyword. Instead of rewriting the
+  initialization logic, minor constructors simply "forward or
+ "chain" their work to one master constructor.

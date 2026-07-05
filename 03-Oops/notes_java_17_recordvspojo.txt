@@ -1,0 +1,67 @@
+as we were writing code in java using pojo
+let us suppose we have this code such as this is the traditional code in java
+public class Student {
+
+    private int id;
+    private String name;
+    private int age;
+
+    public Student() {
+    }
+
+    public Student(int id, String name, int age) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{id=" + id +
+               ", name='" + name + '\'' +
+               ", age=" + age + '}';
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        // implementation
+    }
+
+    @Override
+    public int hashCode() {
+        // implementation
+    }
+}
+
+Now this consist setter , getter and repetitive code and this is known as 
+boiler plate of the code
+What if a class only stores data? Why should developers write all this repetitive code?
+
+A record is a special type of class introduced in Java 16 (previewed in Java 14) that is designed to hold immutable data. 
+The compiler automatically generates constructors, accessor methods, toString(), equals(), and hashCode(), reducing boilerplate code. 
+Records are commonly used for DTOs, API request/response objects, and immutable data models.
+

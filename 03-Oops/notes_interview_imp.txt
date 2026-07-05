@@ -1,5 +1,10 @@
 What is the difference between an instance variable and a static variable?
-An instance variable belongs to an object, so every object gets its own separate copy. A static variable belongs to the class, so only one copy exists and it is shared by all objects of that class. Instance variables are created when an object is created, while static variables are initialized when the class is loaded by the JVM.
+An instance variable belongs to an object, 
+so every object gets its own separate copy.
+ A static variable belongs to the class, so only one copy exists and
+  it is shared by all objects of that class.
+   Instance variables are created when an object is created, 
+   while static variables are initialized when the class is loaded by the JVM.
 
 Why is main() static?
 The main() method is static because the JVM needs to call it before creating any objects. Since static methods belong to the class rather than an object, the JVM can invoke main() directly using the class name without needing an instance.
