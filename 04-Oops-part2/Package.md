@@ -685,3 +685,14 @@ Package Hierarchy
       ▼
 Spring Boot Project Structure
 ```
+Q1. Why can't a static method access instance variables directly?
+
+Answer: Because a static method belongs to the class, not to any specific object. Since multiple objects may exist, the JVM doesn't know which object's instance variable should be accessed.
+
+Q2. Why is main() static?
+
+Answer: The JVM must start the program before any objects are created. Making main() static allows the JVM to invoke it directly using the class name without creating an object.
+
+Q3. Where are static and instance variables stored?
+Instance variables are stored inside each object in the heap.
+Static variables belong to the class, not to any object. They are stored in the JVM's class-related memory area (often referred to conceptually as the Method Area/Metaspace, though the exact implementation is JVM-specific).
