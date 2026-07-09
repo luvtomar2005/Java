@@ -878,7 +878,7 @@ The remaining major topics in the Java Collections Framework are:
 * Queue Interface
 * PriorityQueue
 * Deque Interface
-* ArrayDeque
+* ArrayDeque 
 * Map Interface
 * HashMap
 * LinkedHashMap
